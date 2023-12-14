@@ -29,5 +29,25 @@ public class Application1 {
         System.out.println("-------------------------");
         System.out.println("true -> not : " + (!true));
         System.out.println("false -> not : " + (!false));
+
+
+        /* 2. 논리식에 논리 연산자 활용 */
+        int a = 1;
+        int b = 2;
+        int c = 3;
+        int d = 4;
+
+        System.out.println();
+        System.out.println("a가 b보다 작으면서 c가 d보다 작은지? " + ((a < b) && (c < d)));
+        System.out.println("a가 b보다 작거나 같으면서 c가 d보다 큰지? " + ((a <= b) && (c > d)));
+        System.out.println("a가 b보다 크면서 c가 d보다 작거나 같은지? " + ((a > b) && (c <= d)));
+        System.out.println("a가 b보다 크거나 같으면서 c가 d보다 크거나 같은지? " + ((a >= b) && (c >= d)));
+
+        System.out.println("-------------------------");
+
+        System.out.println("a가 b보다 작거나 c가 d보다 작은지? " + ((a < b) || (c < d)));
+        System.out.println("a가 b보다 작거나 c가 d보다 큰지? " + ((a < b) || (c > d)));
+        System.out.println("a가 b보다 크거나 c가 d보다 작은지? " + ((a > b) || (c < d)));
+        System.out.println("a가 b보다 크거나 c가 d보다 큰지? " + ((a > b) || (c > d)));
     }
 }
